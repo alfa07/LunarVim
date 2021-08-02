@@ -406,12 +406,12 @@ lvim.lang = {
         },
         on_attach = common_on_attach,
         on_init = common_on_init,
-        init_options = {
-          elmAnalyseTrigger = "change",
-          elmFormatPath = DATA_PATH .. "/lspinstall/elm/node_modules/.bin/elm-format",
-          elmPath = DATA_PATH .. "/lspinstall/elm/node_modules/.bin/",
-          elmTestPath = DATA_PATH .. "/lspinstall/elm/node_modules/.bin/elm-test",
-        },
+        -- init_options = {
+        -- elmAnalyseTrigger = "change",
+        -- elmFormatPath = DATA_PATH .. "/lspinstall/elm/node_modules/.bin/elm-format",
+        -- elmPath = DATA_PATH .. "/lspinstall/elm/node_modules/.bin/",
+        -- elmTestPath = DATA_PATH .. "/lspinstall/elm/node_modules/.bin/elm-test",
+        -- },
       },
     },
   },
@@ -492,6 +492,22 @@ lvim.lang = {
           "-m",
           "stream",
         },
+        on_attach = common_on_attach,
+        on_init = common_on_init,
+        capabilities = common_capabilities,
+      },
+    },
+  },
+  haskell = {
+    formatters = { {
+      exe = "",
+      args = {},
+    } },
+    linters = {},
+    lsp = {
+      provider = "hls",
+      setup = {
+        cmd = { DATA_PATH .. "/lspinstall/haskell/hls" },
         on_attach = common_on_attach,
         on_init = common_on_init,
         capabilities = common_capabilities,
@@ -641,7 +657,7 @@ lvim.lang = {
     formatters = {
       {
         -- @usage can be stylua or lua_format
-        exe = "stylua",
+        exe = "",
         args = {},
       },
     },
