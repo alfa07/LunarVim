@@ -12,7 +12,7 @@ C = require "NeoSolarized.palette"
 -- local highlights = require "NeoSolarized.highlights"
 -- local Treesitter = require "NeoSolarized.Treesitter"
 -- local markdown = require "NeoSolarized.markdown"
--- local Whichkey = require "NeoSolarized.Whichkey"
+local Whichkey = require "NeoSolarized.Whichkey"
 local Git = require "NeoSolarized.Git"
 local barbar = require "NeoSolarized.barbar"
 -- local LSP = require "NeoSolarized.LSP"
@@ -21,7 +21,7 @@ local skeletons = {
   -- highlights,
   -- Treesitter,
   -- markdown,
-  -- Whichkey,
+  Whichkey,
   Git,
   barbar,
   -- LSP,
