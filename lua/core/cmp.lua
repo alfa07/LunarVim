@@ -116,7 +116,7 @@ M.config = function()
 end
 
 M.setup = function()
-  require("luasnip/loaders/from_vscode").lazy_load()
+  -- require("luasnip/loaders/from_vscode").lazy_load()
   require("cmp").setup(lvim.builtin.cmp)
 end
 
